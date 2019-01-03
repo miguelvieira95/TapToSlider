@@ -28,3 +28,5 @@
     
     self.value = touchLocationRatio/100;
 }
+
+@end
