@@ -16,6 +16,7 @@
 		0D56C27621DE49B700B17478 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D56C27521DE49B700B17478 /* main.m */; };
 		0D56C28021DE49B700B17478 /* CustomSliderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D56C27F21DE49B700B17478 /* CustomSliderTests.m */; };
 		0D56C28B21DE49B700B17478 /* CustomSliderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D56C28A21DE49B700B17478 /* CustomSliderUITests.m */; };
+		0D56C29A21DE49F100B17478 /* TapSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D56C29921DE49F100B17478 /* TapSlider.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		0D56C28621DE49B700B17478 /* CustomSliderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomSliderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D56C28A21DE49B700B17478 /* CustomSliderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomSliderUITests.m; sourceTree = "<group>"; };
 		0D56C28C21DE49B700B17478 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D56C29821DE49F100B17478 /* TapSlider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TapSlider.h; sourceTree = "<group>"; };
+		0D56C29921DE49F100B17478 /* TapSlider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TapSlider.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +116,8 @@
 				0D56C27421DE49B700B17478 /* Info.plist */,
 				0D56C27521DE49B700B17478 /* main.m */,
 				0D56C26C21DE49B500B17478 /* CustomSlider.xcdatamodeld */,
+				0D56C29821DE49F100B17478 /* TapSlider.h */,
+				0D56C29921DE49F100B17478 /* TapSlider.m */,
 			);
 			path = CustomSlider;
 			sourceTree = "<group>";
@@ -269,6 +274,7 @@
 				0D56C26E21DE49B500B17478 /* CustomSlider.xcdatamodeld in Sources */,
 				0D56C27621DE49B700B17478 /* main.m in Sources */,
 				0D56C26521DE49B500B17478 /* AppDelegate.m in Sources */,
+				0D56C29A21DE49F100B17478 /* TapSlider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,13 +446,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CDBFSNYAWV;
+				DEVELOPMENT_TEAM = 7MXA6RCL97;
 				INFOPLIST_FILE = CustomSlider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.MiguelVieira.CustomSlider;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Altran.TapToSlider;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -457,13 +464,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CDBFSNYAWV;
+				DEVELOPMENT_TEAM = 7MXA6RCL97;
 				INFOPLIST_FILE = CustomSlider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.MiguelVieira.CustomSlider;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Altran.TapToSlider;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
