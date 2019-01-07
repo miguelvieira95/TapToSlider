@@ -1,6 +1,6 @@
 # TapToSlider
 
-A Simple subclass of UISlider that brings along the possibility of tapping on a specific point on the slider as well as the swipe usual behaviour.
+A Simple subclass of UISlider that brings along the possibility of tapping on a specific point on the slider as well as the usual swipe behaviour.
 
 # Installation using CocoaPods:
 
