@@ -10,23 +10,37 @@
 
 @implementation TapSlider
 
-- (id)initWithCoder:(NSCoder *)coder
+- (instancetype)initWithCoder:(NSCoder *)coder
 {
     self = [super initWithCoder:coder];
     if (self) {
-         UITapGestureRecognizer* recognizer = [UITapGestureRecognizer.alloc initWithTarget:self action:@selector(SliderWasTapped:)];
-        [self addGestureRecognizer: recognizer];
+        [self SetupTouchInputs];
     }
     return self;
+}
+
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        [self SetupTouchInputs];
+    }
+    return self;
+}
+
+-(void)SetupTouchInputs
+{
+    UITapGestureRecognizer* recognizer = [UITapGestureRecognizer.alloc initWithTarget:self action:@selector(SliderWasTapped:)];
+    [self addGestureRecognizer: recognizer];
 }
 
 -(void)SliderWasTapped:(UITapGestureRecognizer *)sender
 {
     CGPoint locationOnSlider = [sender locationInView:self];
-    float maxValue = self.frame.size.width;
-    float touchLocationRatio = locationOnSlider.x * 100 / maxValue;
+    float maxWidth = self.frame.size.width;
+    float touchLocationRatio = locationOnSlider.x * self.maximumValue / maxWidth;
     
-    self.value = touchLocationRatio/100;
+    self.value = touchLocationRatio;
 }
 
 @end
